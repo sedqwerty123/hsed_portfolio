@@ -1,0 +1,2105 @@
+/* =========================================================
+   HESED. — ACADEMIC PORTFOLIO
+
+   COLOR PALETTE
+
+   #F4F3EF — Off White
+   #4A5D4E — Forest Green
+   #C87A53 — Terracotta
+   #0A0D14 — Almost Black
+   #DFE5EB — Light Blue Gray
+   #B89A6C — Muted Gold
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #F4F3EF;
+
+    color: #0A0D14;
+
+    line-height: 1.6;
+}
+
+
+a {
+    color: inherit;
+
+    text-decoration: none;
+}
+
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   GLOBAL SECTION
+========================================================= */
+
+.section {
+
+    min-height: 100vh;
+
+    /*
+        Reduced from 140px to 90px.
+        This makes each section considerably more compact.
+    */
+
+    padding:
+        90px 8vw 100px;
+
+    scroll-margin-top: 80px;
+
+}
+
+
+/* SECTION HEADINGS */
+
+.section-heading {
+
+    max-width: 850px;
+
+    margin-bottom: 60px;
+
+}
+
+
+.section-number {
+
+    color: #C87A53;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size:
+        clamp(45px, 7vw, 90px);
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+
+    font-weight: 700;
+
+}
+
+
+.section-description {
+
+    margin-top: 25px;
+
+    max-width: 600px;
+
+    color: #4A5D4E;
+
+    font-size: 17px;
+
+}
+
+
+/* =========================================================
+   FIXED TOP PANEL
+========================================================= */
+
+.top-panel {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 80px;
+
+    padding:
+        0 6vw;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #F4F3EF;
+
+    border-bottom:
+        1px solid #DFE5EB;
+
+    z-index: 1000;
+
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 30px;
+
+    font-weight: 900;
+
+    letter-spacing: -2px;
+
+    color: #0A0D14;
+
+}
+
+
+.logo span {
+
+    color: #C87A53;
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navigation {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 38px;
+
+}
+
+
+.nav-link {
+
+    position: relative;
+
+    color: #4A5D4E;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    padding: 8px 0;
+
+    transition:
+        color 0.25s ease;
+
+}
+
+
+.nav-link::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #C87A53;
+
+    transition:
+        width 0.25s ease;
+
+}
+
+
+.nav-link:hover,
+.nav-link.active {
+
+    color: #0A0D14;
+
+}
+
+
+.nav-link:hover::after,
+.nav-link.active::after {
+
+    width: 100%;
+
+}
+
+
+/* =========================================================
+   HOME
+========================================================= */
+
+.home-section {
+
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr 0.8fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+    padding-top: 120px;
+
+}
+
+
+.home-content {
+
+    max-width: 750px;
+
+}
+
+
+.small-label {
+
+    color: #C87A53;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* MAIN NAME */
+
+.home-content h1 {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(80px, 13vw, 180px);
+
+    line-height: 0.8;
+
+    letter-spacing: -10px;
+
+    color: #0A0D14;
+
+    margin-left: -7px;
+
+}
+
+
+.home-content h1 span {
+
+    color: #C87A53;
+
+}
+
+
+/* =========================================================
+   HOME INTRODUCTION
+========================================================= */
+
+.home-content h2 {
+
+    margin-top: 45px;
+
+    color: #4A5D4E;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size:
+        clamp(24px, 3vw, 34px);
+
+    line-height: 1.2;
+
+    font-weight: 600;
+
+    letter-spacing: -0.8px;
+
+}
+
+
+.home-description {
+
+    max-width: 520px;
+
+    margin-top: 20px;
+
+    color: #0A0D14;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(18px, 2vw, 22px);
+
+    line-height: 1.5;
+
+    letter-spacing: -0.2px;
+
+}
+
+
+.location-text {
+
+    margin-top: 14px;
+
+    color: #B89A6C;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.primary-button {
+
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding:
+        15px 25px;
+
+    background: #4A5D4E;
+
+    color: #F4F3EF;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+
+.primary-button:hover {
+
+    background: #C87A53;
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* =========================================================
+   IMAGE CONTAINERS
+========================================================= */
+
+.image-frame {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #DFE5EB;
+
+    border:
+        1px solid #B89A6C;
+
+}
+
+
+.image-frame img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.5s ease;
+
+}
+
+
+.image-frame:hover img {
+
+    transform:
+        scale(1.04);
+
+}
+
+
+/* =========================================================
+   HOME FACE
+========================================================= */
+
+.home-image-wrapper {
+
+    width:
+        min(420px, 100%);
+
+    justify-self: end;
+
+}
+
+
+.home-face {
+
+    width: 100%;
+
+    aspect-ratio:
+        4 / 5;
+
+}
+
+
+.image-caption {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 12px;
+
+    color: #4A5D4E;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
+.about-section {
+
+    background: #0A0D14;
+
+    color: #F4F3EF;
+
+}
+
+
+.about-section
+.section-number {
+
+    color: #C87A53;
+
+}
+
+
+.about-section
+.section-heading h2 {
+
+    color: #F4F3EF;
+
+}
+
+
+.about-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(280px, 0.7fr)
+        minmax(400px, 1.3fr);
+
+    gap: 100px;
+
+    align-items: start;
+
+}
+
+
+/* =========================================================
+   ABOUT IMAGE
+========================================================= */
+
+.about-image-column {
+
+    position: sticky;
+
+    top: 120px;
+
+}
+
+
+.about-face {
+
+    width: 100%;
+
+    max-width: 400px;
+
+    aspect-ratio:
+        4 / 5;
+
+    background: #4A5D4E;
+
+    border-color: #4A5D4E;
+
+}
+
+
+.image-note {
+
+    margin-top: 15px;
+
+    color: #B89A6C;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================================
+   ABOUT TEXT
+========================================================= */
+
+.about-content {
+
+    max-width: 850px;
+
+}
+
+
+.about-introduction {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(24px, 3vw, 38px);
+
+    line-height: 1.25;
+
+    color: #F4F3EF;
+
+}
+
+
+.about-description {
+
+    margin-top: 30px;
+
+    max-width: 750px;
+
+    color: #DFE5EB;
+
+    font-size: 16px;
+
+}
+
+
+/* =========================================================
+   ABOUT TABS
+========================================================= */
+
+.about-tabs {
+
+    display: flex;
+
+    gap: 30px;
+
+    margin-top: 60px;
+
+    border-bottom:
+        1px solid #4A5D4E;
+
+}
+
+
+.tab-button {
+
+    position: relative;
+
+    padding:
+        15px 0;
+
+    background: transparent;
+
+    border: none;
+
+    color: #B89A6C;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+.tab-button::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -1px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #C87A53;
+
+    transition:
+        width 0.25s ease;
+
+}
+
+
+.tab-button.active {
+
+    color: #F4F3EF;
+
+}
+
+
+.tab-button.active::after {
+
+    width: 100%;
+
+}
+
+
+/* =========================================================
+   TAB CONTENT
+========================================================= */
+
+.tab-content {
+
+    display: none;
+
+    padding-top: 35px;
+
+}
+
+
+.tab-content.active {
+
+    display: block;
+
+    animation:
+        fadeIn 0.35s ease;
+
+}
+
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(8px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =========================================================
+   PERSONAL DETAILS
+========================================================= */
+
+.details-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    border-top:
+        1px solid #4A5D4E;
+
+}
+
+
+.detail-item {
+
+    padding:
+        22px 20px 22px 0;
+
+    border-bottom:
+        1px solid #4A5D4E;
+
+}
+
+
+.detail-label {
+
+    display: block;
+
+    color: #B89A6C;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.detail-value {
+
+    color: #DFE5EB;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.education-item {
+
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr;
+
+    gap: 30px;
+
+    padding:
+        25px 0;
+
+    border-top:
+        1px solid #4A5D4E;
+
+}
+
+
+.education-year {
+
+    color: #C87A53;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+.education-item h3 {
+
+    font-size: 20px;
+
+    color: #F4F3EF;
+
+    margin-bottom: 5px;
+
+}
+
+
+.education-item p {
+
+    color: #DFE5EB;
+
+    font-size: 14px;
+
+}
+
+
+.education-item span {
+
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color: #B89A6C;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================================
+   GRADED WORKS
+========================================================= */
+
+.works-section {
+
+    background: #F4F3EF;
+
+}
+
+
+/* =========================================================
+   FILTER BUTTONS
+========================================================= */
+
+.work-filters {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.filter-button {
+
+    padding:
+        12px 18px;
+
+    border:
+        1px solid #B89A6C;
+
+    background: transparent;
+
+    color: #4A5D4E;
+
+    cursor: pointer;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+
+}
+
+
+.filter-button:hover,
+.filter-button.active {
+
+    background: #4A5D4E;
+
+    border-color: #4A5D4E;
+
+    color: #F4F3EF;
+
+}
+
+
+/* =========================================================
+   WORK GRID
+========================================================= */
+
+.works-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* =========================================================
+   WORK CARD
+========================================================= */
+
+.work-card {
+
+    background: #DFE5EB;
+
+    border:
+        1px solid #DFE5EB;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+.work-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    border-color: #B89A6C;
+
+}
+
+
+/* =========================================================
+   WORK IMAGE
+========================================================= */
+
+.work-image {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio:
+        16 / 10;
+
+    overflow: hidden;
+
+    background: #4A5D4E;
+
+}
+
+
+.work-image img {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease,
+}
+
+
+.work-card:hover
+.work-image img {
+
+    transform:
+        scale(1.05);
+
+
+}
+
+
+.work-number {
+
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    padding:
+        7px 9px;
+
+    background: #0A0D14;
+
+    color: #F4F3EF;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================================
+   WORK INFO
+========================================================= */
+
+.work-info {
+
+    padding: 22px;
+
+}
+
+
+.work-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 12px;
+
+}
+
+
+.work-type {
+
+    color: #C87A53;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.work-score {
+
+    color: #4A5D4E;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+.work-info h3 {
+
+    color: #0A0D14;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 22px;
+
+    line-height: 1.1;
+
+    margin-bottom: 8px;
+
+}
+
+
+.work-info p {
+
+    color: #4A5D4E;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   AUTOMATIC GRADE SUMMARY
+========================================================= */
+
+.grade-summary {
+
+    margin-top: 80px;
+
+    background: #0A0D14;
+
+    color: #F4F3EF;
+
+    padding: 45px;
+
+}
+
+
+.summary-heading p {
+
+    color: #C87A53;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.summary-heading h3 {
+
+    margin-top: 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 30px;
+
+    font-weight: 400;
+
+}
+
+
+/* =========================================================
+   SUMMARY GRID
+========================================================= */
+
+.summary-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    margin-top: 40px;
+
+}
+
+
+.summary-item {
+
+    min-height: 100px;
+
+    padding:
+        15px 25px;
+
+    border-left:
+        1px solid #4A5D4E;
+
+}
+
+
+/* MAIN NUMBER */
+
+.summary-number {
+
+    display: inline-block;
+
+    color: #F4F3EF;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 40px;
+
+    line-height: 1;
+
+}
+
+
+/* NUMBER + PERCENTAGE */
+
+.summary-number-with-percent {
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 12px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.summary-number-with-percent
+.summary-number {
+
+    margin-bottom: 0;
+
+}
+
+
+/* PERCENTAGE */
+
+.summary-percent {
+
+    color: #C87A53;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+/* LABEL */
+
+.summary-label {
+
+    display: block;
+
+    margin-top: 10px;
+
+    color: #B89A6C;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-section {
+
+    background: #4A5D4E;
+
+    color: #F4F3EF;
+
+}
+
+
+.contact-section
+.section-number {
+
+    color: #C87A53;
+
+}
+
+
+.contact-section
+.section-heading h2 {
+
+    color: #F4F3EF;
+
+}
+
+
+.contact-section
+.section-description {
+
+    color: #DFE5EB;
+
+}
+
+
+.contact-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        0.8fr 1.2fr;
+
+    gap: 100px;
+
+    align-items: start;
+
+}
+
+
+.contact-introduction p {
+
+    max-width: 350px;
+
+    color: #DFE5EB;
+
+    font-size: 18px;
+
+}
+
+
+.contact-list {
+
+    border-top:
+        1px solid #B89A6C;
+
+}
+
+
+.contact-item {
+
+    display: grid;
+
+    grid-template-columns:
+        120px 1fr 30px;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding:
+        25px 0;
+
+    border-bottom:
+        1px solid #B89A6C;
+
+    transition:
+        padding-left 0.25s ease;
+
+}
+
+
+.contact-item:hover {
+
+    padding-left: 12px;
+
+}
+
+
+.contact-label {
+
+    color: #B89A6C;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.contact-value {
+
+    color: #F4F3EF;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+}
+
+
+.contact-arrow {
+
+    color: #C87A53;
+
+    font-size: 20px;
+
+    text-align: right;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+
+    min-height: 100px;
+
+    padding:
+        30px 6vw;
+
+    background: #0A0D14;
+
+    color: #DFE5EB;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+
+.footer-logo {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    color: #F4F3EF;
+
+    font-size: 25px;
+
+    font-weight: 900;
+
+    letter-spacing: -2px;
+
+}
+
+
+.footer-logo span {
+
+    color: #C87A53;
+
+}
+
+
+.footer p {
+
+    color: #B89A6C;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.footer a {
+
+    color: #F4F3EF;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+.footer a:hover {
+
+    color: #C87A53;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+
+    .navigation {
+
+        gap: 20px;
+
+    }
+
+
+    .home-section {
+
+        grid-template-columns:
+            1fr 0.7fr;
+
+        gap: 40px;
+
+    }
+
+
+    .about-layout {
+
+        grid-template-columns:
+            280px 1fr;
+
+        gap: 60px;
+
+    }
+
+
+    .works-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .summary-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        row-gap: 30px;
+
+    }
+
+
+    .contact-layout {
+
+        gap: 50px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+
+    /* NAVIGATION */
+
+    .top-panel {
+
+        height: auto;
+
+        min-height: 70px;
+
+        padding:
+            15px 5vw;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+
+    .logo {
+
+        font-size: 27px;
+
+    }
+
+
+    .navigation {
+
+        width: 100%;
+
+        justify-content:
+            space-between;
+
+        gap: 10px;
+
+    }
+
+
+    .nav-link {
+
+        font-size: 10px;
+
+        letter-spacing: 0;
+
+    }
+
+
+
+    /* SECTIONS */
+
+    .section {
+
+        padding:
+            105px 6vw 80px;
+
+    }
+
+
+    .section-heading {
+
+        margin-bottom: 45px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 55px;
+
+        letter-spacing: -3px;
+
+    }
+
+
+
+    /* HOME */
+
+    .home-section {
+
+        min-height: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 60px;
+
+        padding-top: 130px;
+
+    }
+
+
+    .home-content h1 {
+
+        font-size: 100px;
+
+        letter-spacing: -7px;
+
+    }
+
+
+    .home-content h2 {
+
+        margin-top: 35px;
+
+        font-size: 25px;
+
+    }
+
+
+    .home-description {
+
+        margin-top: 18px;
+
+        font-size: 19px;
+
+    }
+
+
+    .location-text {
+
+        margin-top: 12px;
+
+    }
+
+
+    .home-image-wrapper {
+
+        width: 80%;
+
+        align-self: center;
+
+    }
+
+
+
+    /* ABOUT */
+
+    .about-layout {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 50px;
+
+    }
+
+
+    .about-image-column {
+
+        position: static;
+
+        width: 80%;
+
+    }
+
+
+    .about-introduction {
+
+        font-size: 27px;
+
+    }
+
+
+    .details-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .education-item {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 8px;
+
+    }
+
+
+
+    /* WORKS */
+
+    .works-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .grade-summary {
+
+        padding:
+            30px 20px;
+
+    }
+
+
+    .summary-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .summary-item {
+
+        padding:
+            10px 15px;
+
+    }
+
+
+    .summary-number {
+
+        font-size: 32px;
+
+    }
+
+
+    .summary-percent {
+
+        font-size: 12px;
+
+    }
+
+
+    .summary-number-with-percent {
+
+        gap: 8px;
+
+    }
+
+
+
+    /* CONTACT */
+
+    .contact-layout {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 50px;
+
+    }
+
+
+    .contact-item {
+
+        grid-template-columns:
+            80px 1fr 20px;
+
+        gap: 10px;
+
+    }
+
+
+    .contact-value {
+
+        font-size: 15px;
+
+        word-break: break-word;
+
+    }
+
+
+
+    /* FOOTER */
+
+    .footer {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding:
+            30px 6vw;
+
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+========================================================= */
+
+@media (max-width: 400px) {
+
+
+    .navigation {
+
+        gap: 6px;
+
+    }
+
+
+    .nav-link {
+
+        font-size: 9px;
+
+    }
+
+
+    .home-content h1 {
+
+        font-size: 80px;
+
+    }
+
+
+    .home-image-wrapper,
+    .about-image-column {
+
+        width: 100%;
+
+    }
+
+
+    .summary-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+/* =========================================================
+   CLICKABLE WORK IMAGES
+========================================================= */
+
+.work-image {
+    cursor: pointer;
+}
+
+.view-image {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    padding: 7px 10px;
+    background: #F4F3EF;
+    color: #0A0D14;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.work-image:hover .view-image,
+.work-image:focus-visible .view-image {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.work-image:focus-visible {
+    outline: 2px solid #C87A53;
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   IMAGE VIEWER / LIGHTBOX
+========================================================= */
+
+.image-viewer {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 13, 20, 0.96);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+    padding: 40px 80px;
+}
+
+.image-viewer.active {
+    display: flex;
+}
+
+.viewer-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewer-image {
+    max-width: 85vw;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.viewer-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: #C87A53;
+    color: #F4F3EF;
+    font-size: 25px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.viewer-close:hover {
+    background: #B89A6C;
+}
+
+.viewer-prev,
+.viewer-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 55px;
+    height: 55px;
+    border: 1px solid #B89A6C;
+    background: #0A0D14;
+    color: #F4F3EF;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.viewer-prev {
+    left: 0;
+}
+
+.viewer-next {
+    right: 0;
+}
+
+.viewer-prev:hover,
+.viewer-next:hover {
+    background: #C87A53;
+    color: #F4F3EF;
+}
+
+.viewer-counter {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    color: #B89A6C;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   MOBILE IMAGE VIEWER
+========================================================= */
+
+@media (max-width: 700px) {
+    .image-viewer {
+        padding: 25px 55px;
+    }
+
+    .viewer-image {
+        max-width: 90vw;
+        max-height: 75vh;
+    }
+
+    .viewer-prev,
+    .viewer-next {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .viewer-close {
+        width: 40px;
+        height: 40px;
+        font-size: 21px;
+    }
+
+    .view-image {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
